@@ -7,10 +7,12 @@ require_relative './exercise_3'
 require_relative './exercise_4'
 require_relative './exercise_5'
 require_relative './exercise_6'
-require_relative './exercise_7'
+
+puts 'Exercise 8'
+puts '----------'
 
 @store1 = Store.first
 
-@store1.employees.create(first_name: 'Sandeep', last_name: 'Chopra', hourly_rate: 100)
+@employee1 = @store1.employees.create(first_name: 'Sandeep', last_name: 'Chopra', hourly_rate: 100)
 
-puts Employee.last
+p @employee1.password

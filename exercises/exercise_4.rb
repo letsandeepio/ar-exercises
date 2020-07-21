@@ -18,3 +18,9 @@ store1 = Store.where(womens_apparel: true)
 store1.each do |store|
   puts "#{store.name} & #{store.annual_revenue}"
 end
+
+store2 = Store.where('womens_apparel = true AND annual_revenue > 1000000')
+
+store2.each do |store|
+  puts "#{store.name} & #{store.annual_revenue}"
+end

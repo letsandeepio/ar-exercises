@@ -8,7 +8,7 @@ require_relative './exercise_3'
 puts 'Exercise 4'
 puts '----------'
 
-# Your code goes here ...
+# Your code goes here
 Store.create(name: 'Surrey', annual_revenue: 224_000, womens_apparel: true, mens_apparel: false)
 Store.create(name: 'Whistler', annual_revenue: 1_900_000, womens_apparel: false, mens_apparel: true)
 Store.create(name: 'Yaletown', annual_revenue: 430_000, womens_apparel: true, mens_apparel: true)

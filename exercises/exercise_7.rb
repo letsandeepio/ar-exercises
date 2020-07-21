@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../setup'
 require_relative './exercise_1'
 require_relative './exercise_2'
@@ -6,7 +8,10 @@ require_relative './exercise_4'
 require_relative './exercise_5'
 require_relative './exercise_6'
 
-puts "Exercise 7"
-puts "----------"
+puts 'Exercise 7'
+puts '----------'
 
 # Your code goes here ...
+puts 'Please enter a store name:'
+storename = gets.chomp
+Store.create!(name: storename)

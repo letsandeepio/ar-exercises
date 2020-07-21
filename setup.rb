@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'pry' # in case you want to use binding.pry
 require 'active_record'
 require_relative 'lib/store'

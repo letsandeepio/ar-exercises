@@ -10,4 +10,11 @@ class Store < ActiveRecord::Base
       errors.add(:mens_apparel, 'Store must carry one of the apparel types')
     end
   end
+  before_destroy :can_destroy?
+  def can_destroy?
+    unless employees.empty?
+      errors.add(:employees, "Can't destroy store with more than 0 employees")
+      false
+    end
+  end
 end
